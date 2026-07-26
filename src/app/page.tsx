@@ -1,25 +1,25 @@
-import AboutMe from "./components/home/about-me"
-import Contact from "./components/home/contact"
-import EducationSkills from "./components/home/education-skills"
-import ExperienceSec from "./components/home/experience-sec"
-import HeroSection from "./components/home/hero-section"
-import ContactBar from "./components/home/hero-section/contact-bar"
-import LatestWork from "./components/home/latest-work"
+import AboutMe from "./components/home/about-me";
+import HeroSection from "./components/home/hero-section";
+import Skills from "./components/home/skills";
+import Education from "./components/home/education";
+import Projects from "./components/home/projects";
+import Experience from "./components/home/experience";
+import Achievements from "./components/home/achievements";
+import Contact from "./components/home/contacts";
 
-const page = () => {
+const Page = () => {
   return (
-    <>
-      <main>
-        <HeroSection />
-        <ContactBar />
-        <AboutMe />
-        <ExperienceSec />
-        <EducationSkills />
-        <LatestWork />
-        <Contact />
-      </main>
-    </>
-  )
-}
+    <main>
+  <HeroSection />
+  <AboutMe />
+  <Skills />
+  <Education />
+  <Projects />
+  <Experience />
+  <Achievements />
+  <Contact />
+</main>
+  );
+};
 
-export default page
+export default Page;

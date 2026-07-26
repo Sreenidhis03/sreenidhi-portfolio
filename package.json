@@ -1,5 +1,5 @@
 {
-  "name": "package",
+  "name": "sreenidhi-portfolio",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -10,7 +10,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "framer-motion": "^12.42.2",
     "html2pdf.js": "^0.10.3",
+    "lucide-react": "^1.27.0",
     "next": "15.3.5",
     "next-themes": "^0.4.6",
     "react": "^19.0.0",

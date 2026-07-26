@@ -1,6 +1,7 @@
 import { getImgPath } from "@/utils/image";
 import Image from "next/image";
 import Button from "../../common/button";
+import AnimatedSection from "../../AnimatedSection";
 
 import {
   FaGithub,
@@ -13,6 +14,7 @@ import {
 
 const HeroSection = () => {
   return (
+    <AnimatedSection>
     <section className="relative overflow-hidden pt-36 md:pt-40 pb-20 lg:pb-28">
       <div className="container">
         <div className="grid lg:grid-cols-2 gap-14 items-center">
@@ -78,10 +80,11 @@ const HeroSection = () => {
               />
 
               <Button
-                text="Download Resume"
-                href="/resume.pdf"
-                primary={false}
-              />
+  text="View Resume"
+  href="/Sreenidhi_Resume.pdf"
+  primary={false}
+  newTab
+/>
             </div>
 
             {/* Social Links */}
@@ -141,6 +144,7 @@ const HeroSection = () => {
         />
       </div>
     </section>
+    </AnimatedSection>
   );
 };
 
